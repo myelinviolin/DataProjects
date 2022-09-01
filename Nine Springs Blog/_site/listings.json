@@ -1,9 +1,21 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blogpostlist.html",
     "items": [
-      "/posts/30Aug2022_Documentation Ideas/index.html",
+      "/posts/30Aug2022_Documentation_Ideas/index.html",
       "/posts/30Aug2022_welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/localbusinesses.html",
+    "items": [
+      "/businesses/Finca_Coffee/index.html"
+    ]
+  },
+  {
+    "listing": "/volunteer.html",
+    "items": [
+      "/volunteer/briarpatch/index.html"
     ]
   }
 ]

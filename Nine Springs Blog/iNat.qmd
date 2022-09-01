@@ -1,7 +1,8 @@
 ---
-title: "iNat"
+title: "iNaturalist Data"
 image: profile.jpg
 author: "Courtney Konieczko"
+title-block-banner: true
 ---
 
 iNat data

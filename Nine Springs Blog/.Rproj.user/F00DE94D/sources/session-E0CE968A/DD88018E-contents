@@ -1,0 +1,14 @@
+---
+title: "Finca Coffee"
+categories: [restaurant, coffee]
+image: "image.jpg"
+about:
+  template: trestles
+  links:
+    - icon: facebook
+      href: https://www.facebook.com/FincaMadison/
+    - icon: instagram
+      href: https://www.instagram.com/fincamadison/?hl=en/
+    - icon: pin-map
+      href: https://g.page/FincaMadison?share
+---

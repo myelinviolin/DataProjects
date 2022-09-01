@@ -1,7 +1,13 @@
 {
   "listingMap": {
-    "index.qmd": [
+    "blogpostlist.qmd": [
       "posts"
+    ],
+    "localbusinesses.qmd": [
+      "businesses"
+    ],
+    "volunteer.qmd": [
+      "volunteer"
     ]
   }
 }
