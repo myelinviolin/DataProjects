@@ -12,6 +12,6 @@ This is a post with executable code.
 1 + 1
 ```
 
-![](image.jpg){width="415"}
+![](image.jpg){width="325"}
 
 More text

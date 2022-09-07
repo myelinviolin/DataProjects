@@ -3,11 +3,14 @@
     "blogpostlist.qmd": [
       "posts"
     ],
+    "events.qmd": [
+      "businesses"
+    ],
     "localbusinesses.qmd": [
       "businesses"
     ],
-    "volunteer.qmd": [
-      "volunteer"
+    "resources.qmd": [
+      "resources"
     ]
   }
 }

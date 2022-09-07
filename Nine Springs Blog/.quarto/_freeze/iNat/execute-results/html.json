@@ -1,0 +1,16 @@
+{
+  "hash": "58f0fa99a4f7ec6fede07c5b363f6c6a",
+  "result": {
+    "markdown": "---\ntitle: \"iNaturalist Data\"\nimage: profile.jpg\nauthor: \"Courtney Konieczko\"\ntitle-block-banner: true\n---\n\n\niNat data\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(magrittr)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nWarning: package 'magrittr' was built under R version 4.0.5\n```\n:::\n\n```{.r .cell-code}\nlibrary(ggplot2)\nnskml <- sf::read_sf(\"NineSpringsArea.kml\") %>% dplyr::select(-Description)\nnsc <- sf::read_sf(\"NineSpringsCreek.kml\") %>% dplyr::select(-Description)\nbbt <- sf::read_sf(\"BaxterBikeTrail.kml\") %>% dplyr::select(-Description)\nstreets <- sf::read_sf(\"Streets.kml\") %>% dplyr::select(-Description)\n\nggplot() + geom_sf(data = nskml, color = \"orange\", size = 2) +\n  geom_sf(data = nsc, color = \"blue\", size = 1) +\n  geom_sf(data = bbt, color = \"red\", size = 1) +\n  geom_sf(data = streets, color = \"yellow\", size = 0.75)\n```\n\n::: {.cell-output-display}\n![](iNat_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "iNat_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "oNline Web Fonts"
   },
   {
     "objectID": "blogpostlist.html",
@@ -14,11 +14,32 @@
     "text": "natural area\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2022\n\n\nCourtney Konieczko\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nneighborhood\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2022\n\n\nCourtney Konieczko\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "businesses/FantasyMakeup/index.html",
+    "href": "businesses/FantasyMakeup/index.html",
+    "title": "Metamorfaces Fantasy Makeup LLC",
+    "section": "",
+    "text": "Description"
+  },
+  {
+    "objectID": "businesses/Finca_Coffee/index.html",
+    "href": "businesses/Finca_Coffee/index.html",
+    "title": "Finca Coffee",
+    "section": "",
+    "text": "Description"
+  },
+  {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
+    "section": "",
+    "text": "events\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nrestaurant\n\n\ncoffee\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "iNat.html",
     "href": "iNat.html",
     "title": "iNaturalist Data",
     "section": "",
-    "text": "iNat data"
+    "text": "library(magrittr)\n\nWarning: package 'magrittr' was built under R version 4.0.5\n\nlibrary(ggplot2)\nnskml <- sf::read_sf(\"NineSpringsArea.kml\") %>% dplyr::select(-Description)\nnsc <- sf::read_sf(\"NineSpringsCreek.kml\") %>% dplyr::select(-Description)\nbbt <- sf::read_sf(\"BaxterBikeTrail.kml\") %>% dplyr::select(-Description)\nstreets <- sf::read_sf(\"Streets.kml\") %>% dplyr::select(-Description)\n\nggplot() + geom_sf(data = nskml, color = \"orange\", size = 2) +\n  geom_sf(data = nsc, color = \"blue\", size = 1) +\n  geom_sf(data = bbt, color = \"red\", size = 1) +\n  geom_sf(data = streets, color = \"yellow\", size = 0.75)"
   },
   {
     "objectID": "index.html",
@@ -32,7 +53,7 @@
     "href": "localbusinesses.html",
     "title": "Local Businesses",
     "section": "",
-    "text": "restaurant\n\n\ncoffee\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "events\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nrestaurant\n\n\ncoffee\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/30Aug2022_Documentation_Ideas/index.html",
@@ -49,10 +70,52 @@
     "text": "This is the first post in a Quarto blog. Welcome!"
   },
   {
-    "objectID": "volunteer.html",
-    "href": "volunteer.html",
-    "title": "Volunteer Opportunities",
+    "objectID": "resources/Arboretum/index.html",
+    "href": "resources/Arboretum/index.html",
+    "title": "UW-Madison Arboretum",
     "section": "",
-    "text": "youth\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Description"
+  },
+  {
+    "objectID": "resources/ArtesianHOA/index.html",
+    "href": "resources/ArtesianHOA/index.html",
+    "title": "Artesian Lane HOA",
+    "section": "",
+    "text": "Description"
+  },
+  {
+    "objectID": "resources/briarpatch/index.html",
+    "href": "resources/briarpatch/index.html",
+    "title": "BriarPatch Youth Services",
+    "section": "",
+    "text": "Description"
+  },
+  {
+    "objectID": "resources/FOCS/index.html",
+    "href": "resources/FOCS/index.html",
+    "title": "Friends of Capital Springs",
+    "section": "",
+    "text": "Description"
+  },
+  {
+    "objectID": "resources/MAFPG/index.html",
+    "href": "resources/MAFPG/index.html",
+    "title": "Madison Area Food Pantry Gardens",
+    "section": "",
+    "text": "Description"
+  },
+  {
+    "objectID": "resources/WingraSprings/index.html",
+    "href": "resources/WingraSprings/index.html",
+    "title": "WingraSprings Blog",
+    "section": "",
+    "text": "Description"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "blog\n\n\nenvironment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvolunteer\n\n\ngardening\n\n\nenvironment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfood security\n\n\nvolunteer\n\n\ngardening\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nenvironment\n\n\nvolunteer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyouth\n\n\nvolunteer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nneighborhood\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

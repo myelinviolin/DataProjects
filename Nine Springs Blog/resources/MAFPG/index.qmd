@@ -1,0 +1,22 @@
+---
+title: "Madison Area Food Pantry Gardens"
+categories: [food security, volunteer, gardening]
+image: "image.jpg"
+about:
+  template: trestles
+  links:
+    - icon: globe
+      href: https://foodpantrygardens.org/index.html
+    - icon: facebook
+      href: https://www.facebook.com/foodpantrygardens/
+    - icon: egg-fill
+      href: https://www.flickr.com/photos/foodpantrygardens/
+    - icon: instagram
+      href: https://instagram.com/foodpantrygardens
+    - icon: twitter
+      href: https://twitter.com/grow_plant_feed
+---
+
+Description
+
+![](map.png){width="361"}

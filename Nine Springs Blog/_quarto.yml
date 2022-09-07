@@ -7,10 +7,11 @@ website:
   navbar:
     background: primary
     left: 
-      - iNat.qmd
       - blogpostlist.qmd
       - localbusinesses.qmd
-      - volunteer.qmd
+      - resources.qmd
+      - events.qmd
+      - iNat.qmd
 
     right:
       - about.qmd

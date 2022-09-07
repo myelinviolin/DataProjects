@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>NineSpringsCreek.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>2</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>Creek</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				-89.38140609463517,43.02593119064639,0 -89.37950759061235,43.02643085407814,0 -89.37839217950264,43.02678069332543,0 -89.37800710666424,43.02678070048788,0 -89.37690162588675,43.02704142452075,0 -89.37611522449795,43.02715638453939,0 -89.37511246892686,43.02735532978779,0 -89.3740429066747,43.02752098354399,0 -89.37204969679485,43.02780878334402,0 -89.37134861555293,43.02789785698739,0 -89.36955895568462,43.02741898871776,0 -89.36760286335479,43.02682072243448,0 -89.36584806919515,43.02624977514995,0 -89.36504216464235,43.02547686220022,0 -89.36292821949478,43.02551253514032,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
