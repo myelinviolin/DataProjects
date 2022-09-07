@@ -1,0 +1,308 @@
+---
+title: "Figs for COW"
+author: "Ellen"
+date: "1/20/2022"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, message = F, warning = F,
+                      cache = TRUE,
+                      cache.path = "cache/")
+library(tidyverse)
+library(tigris)
+library(sf)
+library(cowplot)
+library(leaflet)
+st_erase = function(x, y) st_difference(x, st_union(st_combine(y)))
+`%not_in%` <- Negate(`%in%`)
+
+```
+
+
+```{r}
+
+df1 <- bg_growingshade_main %>%
+  filter(variable %in% c("pbipoc", "canopy_percent", "mdhhincnow", "avg_temp", "ndvi", "pop_density")) %>%
+        select(tract_string, variable, raw_value) %>%
+        pivot_wider(names_from = variable, values_from = raw_value)
+
+df <- df1 %>%
+        select(canopy_percent, mdhhincnow, pbipoc) %>%
+        pivot_longer(names_to = "names", values_to = "raw_value", -c(canopy_percent)) %>%
+        mutate(raw_value = if_else(names == "pbipoc", raw_value * 100, raw_value))
+
+fig_equity <-
+        ggplot(aes(x = raw_value, y = canopy_percent), data = df) +
+        geom_point(col = "grey40", alpha = .2, data = filter(df), na.rm = T, size = .7) +
+        geom_smooth( # method = "lm",
+          method = "gam", formula = y ~ s(x, bs = "cs"),
+          fill = NA, col = councilR::colors$councilBlue, na.rm = T
+        ) +
+        councilR::council_theme()  +
+        facet_wrap(~names,
+          scales = "free", nrow = 1, strip.position = "bottom",
+          labeller = as_labeller(c(pbipoc = "Population identifying as\nperson of color (%)", mdhhincnow = "Median household\nincome ($)"))
+        ) +
+        theme(
+          panel.grid.minor = element_blank(),
+          panel.grid.major = element_blank(),
+          strip.placement = "outside",
+          axis.title.y = element_text(
+            angle = 0,
+            vjust = .5
+          ),
+          plot.margin = margin(7, 7, 7, 7),
+          axis.line = element_line(),
+          axis.line.y = element_line(),
+          axis.ticks = element_line(),
+          axis.text.y = element_text(vjust = .5, hjust = 1),
+          plot.caption = element_text(
+            size = rel(1),
+            colour = "grey30"
+          )
+        ) +
+        scale_y_continuous(
+          labels = scales::percent_format(accuracy = 1),
+          expand = expansion(mult = c(0, .05)),
+          breaks = c(0, .15, .30, .45, .60)
+        ) +
+        scale_x_continuous(
+          labels = scales::comma,
+          expand = expansion(mult = c(0, .1))
+        ) +
+        labs(
+          x = "", y = "Tree\ncanopy\n (%)",
+          caption = # expression(italic(
+          "Source: Analysis of Sentinel-2 satellite imagery (2021)\nand ACS 5-year estimates (2015-2019)" # ))
+        )
+fig_equity
+ggsave("fig_equity.png",fig_equity,  width = 10, height = 5, units = "in", device = "png")
+# ggsave("fig_equity.png",fig_equity,  width = 4, height = 5.5, units = "in", device = "png")
+```
+
+Hi income neighborhood:
+
+```{r}
+hinc <- mn_bgs %>% select(GEOID) %>%
+  rename(tract_string=GEOID) %>%
+  right_join(df1 %>%
+               filter(mdhhincnow > 100000,
+                      canopy_percent > .35,
+                      pop_density > 8,
+                      pbipoc < .2))
+
+pal <- colorNumeric(
+  palette = "Greens",
+  domain = hinc$canopy_percent)
+
+leaflet(hinc) %>%
+  addTiles() %>%
+  addPolygons(color = "black",
+              fillOpacity = .7,
+              fillColor = ~pal(canopy_percent),
+              popup = ~paste0(tract_string,
+                              "<br>pop density: ", round(pop_density, 1), 
+                              "<br>P bipoc: ", round(pbipoc(100), 2),
+                              "<br>Tree canopy: ", round(canopy_percent, 2),
+                              "<br>Median hhinc: $", prettyNum(mdhhincnow, big.mark = ","),
+                              "<br>Temp: ", avg_temp,
+                              "<br>NDVI: ", ndvi)) %>%
+  addLegend("bottomright", 
+            pal = pal,
+            values = ~canopy_percent,
+    opacity = 1
+  ) 
+
+```
+
+Low income neighborhood
+```{r}
+
+
+hinc <- mn_bgs %>% select(GEOID) %>%
+  rename(tract_string=GEOID) %>%
+  right_join(df1 %>%
+               filter(mdhhincnow < 80000,
+                      canopy_percent < .21,
+                      pop_density > 8, 
+                      pop_density < 15,
+                      pbipoc > .4))
+
+pal <- colorNumeric(
+  palette = "Greens",
+  domain = hinc$canopy_percent)
+
+leaflet(hinc) %>%
+  addTiles() %>%
+  addPolygons(color = "black",
+              fillOpacity = .7,
+              fillColor = ~pal(canopy_percent),
+              popup = ~paste0(tract_string,
+                              "<br>pop density: ", round(pop_density, 1), 
+                              "<br>P bipoc: ", round(pbipoc * 100, 2),
+                              "<br>Tree canopy: ", round(canopy_percent, 2),
+                              "<br>Median hhinc: $", prettyNum(mdhhincnow, big.mark = ","),
+                              "<br>Temp: ", avg_temp,
+                              "<br>NDVI: ", ndvi)) %>%
+  addLegend("bottomright", 
+            pal = pal,
+            values = ~canopy_percent,
+    opacity = 1
+  ) 
+
+
+# low = 270530001025 in camden
+# high = 271230357002 in summit hill
+
+bg_growingshade_data$ndvi[bg_growingshade_data$tract_string == "270530001025"] #96
+bg_growingshade_data$avg_temp[bg_growingshade_data$tract_string == "271230357002"] #96
+```
+
+
+
+Temp
+
+```{r}
+ndvilabs <- c(
+      "<img src='./NDVI_.17.png' height='75' /><br>Low<br>green space",
+      "<img src='./NDVI_.42.png' height='75' /><br>Moderate<br>green space",
+      "<img src='./NDVI_.67.png' height='75' /><br>High<br>green space"
+    )
+
+df <- df1 %>%
+        select(avg_temp, ndvi)
+
+      tempplot <- ggplot(aes(x = ndvi, y = avg_temp), data = df) +
+        geom_point(col = "grey40", alpha = .2, data = filter(df), na.rm = T) +
+        geom_smooth(method = "lm", formula = "y ~ x + I(x^2)", fill = NA, col = councilR::colors$councilBlue) +
+        councilR::council_theme() +
+        labs(
+          x = "Amount of green space\n(maximum NDVI)", y = "Summer\nland surface\ntemperature\n(°F)",
+          caption = "\nSource: Analysis of Sentinel-2 satellite imagery (2021)\nand Landsat 8 satellite imagery (2016)"
+        ) +
+        theme(
+          panel.grid.minor = element_blank(),
+          panel.grid.major = element_blank(),
+          strip.placement = "outside",
+          axis.title.y = element_text(
+            angle = 0,
+            vjust = .5
+          ),
+          plot.margin = margin(7, 7, 14, 7),
+          axis.line = element_line(),
+          axis.ticks = element_line(),
+          axis.text.y = element_text(vjust = .5, hjust = 1),
+          plot.caption = element_text(
+            size = rel(1),
+            colour = "grey30"
+          ),
+          axis.text.x.bottom = ggtext::element_markdown(size = 15)
+        ) +
+        scale_y_continuous(expand = expansion(mult = c(0, .05))) +
+        scale_x_continuous(
+          name = NULL,
+          breaks = c(.17, .42, .67),
+          labels = ndvilabs,
+          position = "bottom"
+        )
+      tempplot
+ggsave("fig_temp.png",tempplot,  width = 6, height = 5, units = "in", device = "png")
+
+```
+
+
+redline
+
+```{r}
+rl <- bg_growingshade_data %>%
+  select(tract_string, holc_pred, holc_pgrn, holc_pblu, holc_pylw, canopy_percent, ndvi, avg_temp) %>% #
+  mutate_all(~replace(., . == 0, NA)) %>%
+  mutate(flag = if_else(is.na(holc_pred) & is.na(holc_pblu) & is.na(holc_pgrn) & is.na(holc_pylw), "remove", "keep")) %>%
+  filter(flag == "keep") %>% select(-flag) %>%
+  pivot_longer(names_to = "holc", values_to = "percent", -c(tract_string, avg_temp, canopy_percent, ndvi)) %>%
+  filter(!is.na(percent)) %>%
+  mutate(grade = case_when(holc == "holc_pred" ~ "D (redlined)",
+                           holc == "holc_pgrn" ~ "A (highest)",
+                           holc == "holc_pylw" ~ "C",
+                           holc == "holc_pblu" ~ "B"))
+rl2 <- rl%>% filter(percent > .75) 
+
+av <- rl2 %>% distinct(tract_string, .keep_all = TRUE) %>% summarise(avg_temp = mean(avg_temp))
+
+redline_fig <- rl2 %>%
+  ggplot(aes(y = fct_rev(grade), x = avg_temp, #(avg_temp - as.numeric(av)), 
+             fill = (avg_temp))) +
+  councilR::council_theme() +
+  geom_vline(xintercept = as.numeric(av), color = "grey70") +
+  # geom_vline(xintercept = 0, color = "grey70") +
+  ggbeeswarm::geom_beeswarm(
+            size = 2, 
+            cex = 1.5,
+            method = "compactswarm",
+            na.rm = T,
+            pch = 21, color = "grey40"
+          ) +
+  scale_fill_distiller(palette = "RdBu") + 
+  labs(x = "Land surface temperature during 2016 heat wave",
+       #x = "2016 temperature difference from region average",
+       y = "1934\nHome\nOwners'\nLoan\nCorporation\nrating",
+       caption = "\nSource: Analysis of Landsat 8 satellite imagery (2016)\nand Equity Considerations dataset (2021) ") +
+  theme(
+          panel.grid.minor = element_blank(),
+          panel.grid.major = element_blank(),
+          strip.placement = "outside",
+          axis.title.y = element_text(
+            angle = 0,
+            vjust = .5
+          ),
+          plot.margin = margin(7, 7, 7, 7),
+          axis.line = element_line(),
+          axis.line.y = element_line(),
+          axis.ticks = element_line(),
+          axis.text.y = element_text(vjust = .5, hjust = 1),
+          plot.caption = element_text(
+            size = rel(1),
+            colour = "grey30"
+          )
+        ) +
+  guides(fill = "none")
+redline_fig
+ggsave("fig_redline.png",redline_fig,  width = 7, height = 4.5, units = "in", device = "png")
+
+```
+
+
+
+Doc with canopy cover by community
+
+```{r}
+library(tidyverse); library(sf)
+ctu_list %>%
+  st_drop_geometry() %>%
+  dplyr::select(GEO_NAME, canopy_percent, min, max) %>%
+  mutate(min = min/100,
+         max = max / 100) %>%
+  rename(`CTU Name` = "GEO_NAME",
+         `Average tree cover (%)` = canopy_percent,
+         `Lowest block group tree cover (%)` = min,
+         `Highest block group tree cover (%)` = max) %>%
+  write_csv("planit_trivia.csv")
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
