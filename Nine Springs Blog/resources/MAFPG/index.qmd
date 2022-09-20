@@ -1,7 +1,8 @@
 ---
 title: "Madison Area Food Pantry Gardens"
 categories: [food security, volunteer, gardening]
-image: "image.jpg"
+image: "logo.png"
+description: grow produce for distribution to food pantries
 about:
   template: trestles
   links:
@@ -17,6 +18,8 @@ about:
       href: https://twitter.com/grow_plant_feed
 ---
 
-Description
+![](lacy-harvest-ahead-of-storm-7-13-15-15.jpg)
+
+The Madison Area Food Pantry Gardens, Inc. is established to provide fresh vegetables for use by area food pantries and meal programs. The work of planning, planting, harvesting, garden maintenance, and delivery of produce is primarily done by volunteers. Land used for garden sites is rented from or given for use by generous landowners. Madison Area Food Pantry Garden volunteers also glean produce from various local growers who agree to donate their excess crops to area food pantries.
 
 ![](map.png){width="361"}

@@ -2,6 +2,7 @@
 title: "UW-Madison Arboretum"
 categories: [volunteer, gardening, environment]
 image: "image.jpg"
+description: natural Wisconsin habitat preservation and education
 about:
   template: trestles
   links:
@@ -15,7 +16,9 @@ about:
       href: https://twitter.com/UWArboretum
 ---
 
-Description
+![Morning fog in Curtis Prairie](fog.jpg){width="346"}
+
+The UW Arboretum is an exceptional place to learn about the natural world. Visitors, volunteers, families, naturalists, gardeners, land managers, educators, students, and scientists question, engage, discover, and build new understanding.
 
 ```{=html}
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5831.9761017906585!2d-89.43389455572061!3d43.04168290946071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0e0923bb1534207!2sUniversity%20of%20Wisconsin%20Madison%20Arboretum%20Visitor%20Center!5e0!3m2!1sen!2sus!4v1662139082033!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

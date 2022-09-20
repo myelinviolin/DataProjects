@@ -9,7 +9,3 @@ about:
 ---
 
 About this blog
-
-```{=html}
-<a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
-```

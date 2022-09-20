@@ -1,12 +1,35 @@
 ---
 title: "Friends of Capital Springs"
-categories: [environment, volunteer]
+categories: [environment, volunteer, youth]
 image: "image.jpg"
+description: preserve the natural areas within Capital Springs Recreation Area
 about:
   template: trestles
   links:
     - icon: globe
       href: https://www.friendsofcapitalsprings.org/
+    - icon: facebook
+      href: https://www.facebook.com/Friendsofcapitalspringsrecreationarea
 ---
 
-Description
+![](IMG_2732-1-1024x768.jpg){width="369"}
+
+The Friends work to connect the entire community with the wonders of nature found at Capital Springs Recreation Area, including miles of undisturbed lakeshore, large stretches of oak savanna and prairie, meandering Nine Springs Creek, mixed oak woodlands and many, many acres of wetlands.
+
+This 2,500-acre, urban-edge park is centrally located in Dane County, extending from Fish Hatchery Road to the western shore of Lake Waubesa.
+
+-   Harvest Moon Festival
+
+-   [Prairie Stewardship Volunteer Work Days](https://www.friendsofcapitalsprings.org/events/#PRAIRIE)
+
+-   [Nature & Bird Walks](https://www.friendsofcapitalsprings.org/events/#NATUREWALKS)
+
+-   [Water Monitoring in Nine Springs Creek](https://www.friendsofcapitalsprings.org/events/#WATER)
+
+-   [Bumble Bee and Kestrel Monitoring](https://www.friendsofcapitalsprings.org/events/#CITIZENSCIENCE)
+
+-   [Captial Springs Recreation Area hiking, biking, and ski trails](https://www.friendsofcapitalsprings.org/capitalcitytrail/)
+
+```{=html}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.96652951877155!2d-89.34358961235907!3d43.02791458192063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880652720b16c0a7%3A0x79453ecbf92dbcab!2sLussier%20Family%20Heritage%20Center!5e1!3m2!1sen!2sus!4v1662746228521!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+```

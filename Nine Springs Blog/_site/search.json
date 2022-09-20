@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "oNline Web Fonts"
+    "text": "About this blog"
   },
   {
     "objectID": "blogpostlist.html",
@@ -39,7 +39,7 @@
     "href": "iNat.html",
     "title": "iNaturalist Data",
     "section": "",
-    "text": "library(magrittr)\n\nWarning: package 'magrittr' was built under R version 4.0.5\n\nlibrary(ggplot2)\nnskml <- sf::read_sf(\"NineSpringsArea.kml\") %>% dplyr::select(-Description)\nnsc <- sf::read_sf(\"NineSpringsCreek.kml\") %>% dplyr::select(-Description)\nbbt <- sf::read_sf(\"BaxterBikeTrail.kml\") %>% dplyr::select(-Description)\nstreets <- sf::read_sf(\"Streets.kml\") %>% dplyr::select(-Description)\n\nggplot() + geom_sf(data = nskml, color = \"orange\", size = 2) +\n  geom_sf(data = nsc, color = \"blue\", size = 1) +\n  geom_sf(data = bbt, color = \"red\", size = 1) +\n  geom_sf(data = streets, color = \"yellow\", size = 0.75)"
+    "text": "Here is what that area looks like plotted on a flat map.\n\nsuppressMessages(library(magrittr))\n\nWarning: package 'magrittr' was built under R version 4.0.5\n\nlibrary(ggplot2)\nnskml <- sf::read_sf(\"NineSpringsArea.kml\") %>% dplyr::select(-Description)\nnsc <- sf::read_sf(\"NineSpringsCreek.kml\") %>% dplyr::select(-Description)\nbbt <- sf::read_sf(\"BaxterBikeTrail.kml\") %>% dplyr::select(-Description)\nstreets <- sf::read_sf(\"Streets.kml\") %>% dplyr::select(-Description)\n\nggplot() + geom_sf(data = nskml, color = \"orange\", size = 2) +\n  geom_sf(data = nsc, color = \"blue\", size = 1) +\n  geom_sf(data = bbt, color = \"red\", size = 1) +\n  geom_sf(data = streets, color = \"yellow\", size = 0.75)\n\n\n\n\nhttps://www.inaturalist.org/places/nine-springs-natural-area https://www.inaturalist.org/observations?place_id=184814\n\n\n\n    \n        \n    \n  \n  \n    \n      \n        \n            View more observations near Nine Springs Natural Area on iNaturalist »"
   },
   {
     "objectID": "index.html",
@@ -74,7 +74,7 @@
     "href": "resources/Arboretum/index.html",
     "title": "UW-Madison Arboretum",
     "section": "",
-    "text": "Description"
+    "text": "The UW Arboretum is an exceptional place to learn about the natural world. Visitors, volunteers, families, naturalists, gardeners, land managers, educators, students, and scientists question, engage, discover, and build new understanding."
   },
   {
     "objectID": "resources/ArtesianHOA/index.html",
@@ -88,21 +88,35 @@
     "href": "resources/briarpatch/index.html",
     "title": "BriarPatch Youth Services",
     "section": "",
-    "text": "Description"
+    "text": "In Dane County it is estimated approximately 300 youth go to bed homeless each night. 1 in 3 youth will be approached for sex in exchange for food, shelter, drugs, etc. within 48 hours of leaving home; 75% of these youth have already or will drop out of school. These are good kids in bad situations and they need our help. The staff at Briarpatch Youth Services work with these youth to make sure they have the resources and support they need in order to succeed."
+  },
+  {
+    "objectID": "resources/ChildCare/index.html",
+    "href": "resources/ChildCare/index.html",
+    "title": "Nine Springs Neighborhood Child Care Group",
+    "section": "",
+    "text": "The Nine Springs Neighborhood is attempting to organize parents together to be able to coordinate play dates, nanny shares, or parents’ night out events. Stay tuned for more!"
+  },
+  {
+    "objectID": "resources/DCOECC/index.html",
+    "href": "resources/DCOECC/index.html",
+    "title": "Dane County Office of Energy & Climate Change Blog",
+    "section": "",
+    "text": "Deliver economic benefits to all parties\nImprove health and wellness of all residents\nIncrease our ability to adapt and be resilient to a changing climate\nBridge the rural and urban divide, creating solutions that work for everyone in the county\nEnhance our natural environments, delivering ecosystem benefits"
   },
   {
     "objectID": "resources/FOCS/index.html",
     "href": "resources/FOCS/index.html",
     "title": "Friends of Capital Springs",
     "section": "",
-    "text": "Description"
+    "text": "The Friends work to connect the entire community with the wonders of nature found at Capital Springs Recreation Area, including miles of undisturbed lakeshore, large stretches of oak savanna and prairie, meandering Nine Springs Creek, mixed oak woodlands and many, many acres of wetlands.\nThis 2,500-acre, urban-edge park is centrally located in Dane County, extending from Fish Hatchery Road to the western shore of Lake Waubesa.\n\nHarvest Moon Festival\nPrairie Stewardship Volunteer Work Days\nNature & Bird Walks\nWater Monitoring in Nine Springs Creek\nBumble Bee and Kestrel Monitoring\nCaptial Springs Recreation Area hiking, biking, and ski trails"
   },
   {
     "objectID": "resources/MAFPG/index.html",
     "href": "resources/MAFPG/index.html",
     "title": "Madison Area Food Pantry Gardens",
     "section": "",
-    "text": "Description"
+    "text": "The Madison Area Food Pantry Gardens, Inc. is established to provide fresh vegetables for use by area food pantries and meal programs. The work of planning, planting, harvesting, garden maintenance, and delivery of produce is primarily done by volunteers. Land used for garden sites is rented from or given for use by generous landowners. Madison Area Food Pantry Garden volunteers also glean produce from various local growers who agree to donate their excess crops to area food pantries."
   },
   {
     "objectID": "resources/WingraSprings/index.html",
@@ -116,6 +130,6 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "blog\n\n\nenvironment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvolunteer\n\n\ngardening\n\n\nenvironment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfood security\n\n\nvolunteer\n\n\ngardening\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nenvironment\n\n\nvolunteer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyouth\n\n\nvolunteer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nneighborhood\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "blog\n\n\nenvironment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvolunteer\n\n\ngardening\n\n\nenvironment\n\n\n\nnatural Wisconsin habitat preservation and education\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nchild care\n\n\nyouth\n\n\n\ncoordinate play dates, nanny shares, or baby sitting\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfood security\n\n\nvolunteer\n\n\ngardening\n\n\n\ngrow produce for distribution to food pantries\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nenvironment\n\n\nvolunteer\n\n\nyouth\n\n\n\npreserve the natural areas within Capital Springs Recreation Area\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nblog\n\n\nenvironment\n\n\n\nThe Office uses its Climate Action Plan as a guide to lead public and private efforts across the community to implement strategies that address climate change\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyouth\n\n\nvolunteer\n\n\n\nstrengthening the lives of youth and families\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nneighborhood\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
