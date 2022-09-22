@@ -1,17 +1,22 @@
 ---
 title: "Metamorfaces Fantasy Makeup LLC"
 categories: [events]
+description: facepainting for any event
 image: "image.jpg"
 about:
   template: trestles
   links:
-    - icon: facebook
-      href: https://www.facebook.com/NuriaV.Moffat/
     - icon: globe
       href: https://metamorfaces.org/
+    - icon: facebook
+      href: https://www.facebook.com/NuriaV.Moffat/
+
 ---
-Description
+
+
 
 ```{=html}
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5832.640714090567!2d-89.37623664646759!3d43.034690700959914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8806529218c3805d%3A0x143e446640bf85!2sMetamorfaces%20Fantasy%20Makeup%20LLC!5e0!3m2!1sen!2sus!4v1662077677022!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 ```
+
+metamorfacesfantasymakeup@gmail.com

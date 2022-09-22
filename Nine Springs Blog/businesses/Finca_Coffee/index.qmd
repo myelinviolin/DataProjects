@@ -1,6 +1,7 @@
 ---
 title: "Finca Coffee"
 categories: [restaurant, coffee]
+description: Salvadoran coffee and Latin food
 image: "image.jpg"
 about:
   template: trestles

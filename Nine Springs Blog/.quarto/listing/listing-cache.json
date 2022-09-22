@@ -4,7 +4,9 @@
       "posts"
     ],
     "events.qmd": [
-      "businesses"
+      "businesses",
+      "events",
+      "events.yml"
     ],
     "localbusinesses.qmd": [
       "businesses"

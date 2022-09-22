@@ -65,9 +65,9 @@ ul.task-list{list-style: none;}
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-name','listing-date','listing-time','listing-location','listing-thumbnail','listing-description','listing-categories','listing-gcal',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-name","listing-date","listing-time","listing-location","listing-thumbnail","listing-description","listing-categories","listing-gcal"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -151,7 +151,7 @@ ul.task-list{list-style: none;}
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="coffee">coffee <span class="quarto-category-count">(1)</span></div><div class="category" data-category="events">events <span class="quarto-category-count">(1)</span></div><div class="category" data-category="restaurant">restaurant <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="social">social <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -162,66 +162,36 @@ ul.task-list{list-style: none;}
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="events" data-listing-file-modified-sort="1662578103514" data-listing-reading-time-sort="0.04">
-<a href="./businesses/FantasyMakeup/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./businesses/FantasyMakeup/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Metamorfaces Fantasy Makeup LLC
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('events'); return false;">
-events
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<ul>
+  <div class="card border-primary mb-3">
+    <h6 div="" class="card-header anchored">Second Item</h6>
+      <div class="card-body">
+        <p class="card-text"></p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-primary">Location: <a href="https://maps.google.com/maps?q=" class="card-link"></a></li>
+      <li class="list-group-item text-primary">Date: Thursday, September 22, 2022</li>
+      <li class="list-group-item text-primary">Time: </li>
+    <div class="card-body">
+      <a href="" class="card-link">GCal</a>
+    </div>
+  </ul></div>
 </div>
+  <div class="card border-primary mb-3">
+    <h6 div="" class="card-header anchored">Finca Coffee</h6>
+      <div class="card-body">
+        coffee.jpg
+        <p class="card-text">coffee meetup</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-primary">Location: <a href="https://maps.google.com/maps?q=Finca Coffee 2500 Rimrock Rd #105, Madison, WI 53713" class="card-link">Finca Coffee 2500 Rimrock Rd #105, Madison, WI 53713</a></li>
+      <li class="list-group-item text-primary">Date: Saturday, October 1, 2022</li>
+      <li class="list-group-item text-primary">Time: 10:00 am</li>
+    <div class="card-body">
+      <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NmhpMzBjMzZjOHJqYWI5bzZvcTMwYjlrNzRzMzRiOW82OHBqOGI5ZzY4czNlYzltNnBpajhlMW9jZ18yMDIyMTAwMVQxNTAwMDBaIGNvdXJ0Lmwua3J1ZWdlckBt&amp;tmsrc=court.l.krueger%40gmail.com" class="card-link">GCal</a>
+    </div>
+  </ul></div>
 </div>
-<div class="card-text listing-description">
-Description
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="restaurant,coffee" data-listing-file-modified-sort="1662578103515" data-listing-reading-time-sort="0.04">
-<a href="./businesses/Finca_Coffee/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./businesses/Finca_Coffee/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Finca Coffee
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('restaurant'); return false;">
-restaurant
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('coffee'); return false;">
-coffee
-</div>
-</div>
-<div class="card-text listing-description">
-Description
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
+</ul>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

@@ -2,9 +2,12 @@
 title: "Events"
 image: profile.jpg
 listing:
-  contents: businesses
-  sort: "date desc"
-  type: grid
+  template: events.ejs
+  contents:
+    - events.yml
+  sort: "date asc"
+  field-required: [date, time, location, name, thumbnail, description, categories]    
+  date-format: full
   categories: true
   sort-ui: false
   filter-ui: false
