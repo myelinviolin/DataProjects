@@ -2,21 +2,31 @@
 title: "Metamorfaces Fantasy Makeup LLC"
 categories: [events]
 description: facepainting for any event
-image: "image.jpg"
+image: "Logo 1.jpg"
 about:
-  template: trestles
+  template: jolla
+  image-shape: rectangle
   links:
     - icon: globe
       href: https://metamorfaces.org/
     - icon: facebook
       href: https://www.facebook.com/NuriaV.Moffat/
-
 ---
 
+MetamorFaces services include professional face painting, body and belly painting for pregnant women, unique homemade face art, and homemade headpieces. MetamorFaces can be hired for festivals, fairs, private parties, block parties, weddings, community celebrations, and events focused on Halloween, fundraisers, company, school, and church.
 
+Face painting is for any occasion and for ALL ages!
+
+Staff has training for working with special needs children and adults as well as bilingual English/Spanish services.
+
+|                                                     |                                             |
+|:---------------------------------------------------:|:-------------------------------------------:|
+| ![](Meduza%20with%20bling%20piece.JPG){width="257"} | ![](Day%20of%20the%20Dead.jpg){width="220"} |
+|            ![](Dragon.png){width="300"}             |       ![](IMG_4837.jpg){width="267"}        |
 
 ```{=html}
+<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmomentos.ariez.1%2Fvideos%2F194162234805854%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5832.640714090567!2d-89.37623664646759!3d43.034690700959914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8806529218c3805d%3A0x143e446640bf85!2sMetamorfaces%20Fantasy%20Makeup%20LLC!5e0!3m2!1sen!2sus!4v1662077677022!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 ```
-
-metamorfacesfantasymakeup@gmail.com
+metamorfacesfantasymakeup\@gmail.com
