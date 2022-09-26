@@ -5,7 +5,7 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/myelinviolin/RProgramming/tree/main/Nine%20Springs%20Blog/
+      href: https://github.com/myelinviolin/DataProjects/tree/main/Nine%20Springs%20Blog
 ---
 
 About this blog

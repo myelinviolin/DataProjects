@@ -1,6 +1,6 @@
 ---
 title: "Madison Area Food Pantry Gardens"
-categories: [food security, volunteer, gardening]
+categories: [food access, volunteer, gardening]
 image: "logo.png"
 description: grow produce for distribution to food pantries
 about:

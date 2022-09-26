@@ -1,0 +1,19 @@
+---
+title: "FairShare CSA Coalition"
+categories: [food access, volunteer]
+image: "fairshare-horizontal_bg.png"
+description: find a local CSA
+about:
+  template: trestles
+  links:
+    - icon: globe
+      href: https://www.csacoalition.org/farm-search
+    - icon: facebook
+      href: http://www.facebook.com/FairShareCSACoalition
+    - icon: instagram
+      href: https://instagram.com/fairsharecsa
+---
+
+![](FairshareCSA.png)
+
+We are a 501(c)3 non-profit organization based in Madison, Wisconsin and serving the Midwest region. Our mission is to support and connect farmers and eaters through Community Supported Agriculture (CSA). We envision a future where CSA is the backbone of a strong local food system and where all families have access to locally-produced, organic food from small-scale farms.
