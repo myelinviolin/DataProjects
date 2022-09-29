@@ -1,0 +1,15 @@
+---
+title: "Alexander Company"
+categories: [neighborhood]
+image: "alexander-co-logo.png"
+description: Novation Campus @ 2500 Rimrock
+about:
+  template: trestles
+  links:
+    - icon: globe
+      href: https://alexandercompany.com/projects/2500-rimrock-road/
+    - icon: twitter 
+      href: https://twitter.com/alexander_co
+    - icon: instagram
+      href: https://www.instagram.com/thealexanderco/
+---

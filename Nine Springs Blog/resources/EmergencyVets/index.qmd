@@ -1,0 +1,19 @@
+---
+title: "Emergency Veterinarians"
+categories: [pets]
+image: "paw-emergency.png"
+description: "list and locations"
+---
+
+```{=html}
+<iframe src="https://www.google.com/maps/d/embed?mid=1Iw1aPql8NXdyY9dwty8KiO0lsQyaS8w&ehbc=2E312F" width="640" height="480"></iframe>
+```
+| Name                                     | Address                | Website                            | Phone Number     |
+|-------------------|------------------|------------------|------------------|
+| Madison Veterinary Specialists           | 2704 Royal Ave.        | www.mvsvets.com                    | \(608\) 274-7772 |
+| Veterinary Emergency Service - East      | 4902 E. Broadway       | www.VeterinaryEmergencyService.com | \(608\) 222-2455 |
+| Veterinary Emergency Service - Middleton | 1612 N. High Point Rd. | www.VeterinaryEmergencyService.com | \(608\) 831-1101 |
+
+```{=html}
+<p class="text-info">sorted by distance</p>
+```

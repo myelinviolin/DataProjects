@@ -14,6 +14,7 @@
     "listing": "/localbusinesses.html",
     "items": [
       "/businesses/FantasyMakeup/index.html",
+      "/businesses/GoldenGuppy/index.html",
       "/businesses/Finca_Coffee/index.html"
     ]
   },
@@ -23,13 +24,17 @@
       "/resources/WingraSprings/index.html",
       "/resources/Arboretum/index.html",
       "/resources/SevenOaks/index.html",
+      "/resources/Schools/index.html",
       "/resources/ChildCare/index.html",
+      "/resources/MCG/index.html",
       "/resources/MAFPG/index.html",
       "/resources/FOCS/index.html",
       "/resources/CSAMap/index.html",
+      "/resources/EmergencyVets/index.html",
       "/resources/DCOECC/index.html",
       "/resources/briarpatch/index.html",
-      "/resources/ArtesianHOA/index.html"
+      "/resources/ArtesianHOA/index.html",
+      "/resources/AlexanderCO/index.html"
     ]
   }
 ]

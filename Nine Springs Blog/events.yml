@@ -2,15 +2,15 @@
   date: "10/1/22"
   time: "10:00 am"
   location: "Finca Coffee 2500 Rimrock Rd #105, Madison, WI 53713"
-  thumbnail: "coffee.jpg"
-  description: coffee meetup
+  thumbnail: "coffee.png"
+  description: "coffee meetup"
   categories: [social]
   gcal: "https://calendar.google.com/event?action=TEMPLATE&tmeid=NmhpMzBjMzZjOHJqYWI5bzZvcTMwYjlrNzRzMzRiOW82OHBqOGI5ZzY4czNlYzltNnBpajhlMW9jZ18yMDIyMTAwMVQxNTAwMDBaIGNvdXJ0Lmwua3J1ZWdlckBt&tmsrc=court.l.krueger%40gmail.com"
-- name: Second Item
-  date: "09/22/22"
-  time:
-  location:
-  thumbnail:
-  description:
-  categories:
-  gcal:
+- name: Restoring Healthy Food Connections on Madison's South Side
+  date: "10/20/22"
+  time: "7:00pm - 8:30pm"
+  location: "University of Wisconsin Madison Arboretum Visitor Center, 2880 Longenecker Dr, Madison, WI 53713, USA"
+  thumbnail: "healthyfood.png"
+  description: "https://arboretum.wisc.edu/event/171581/"
+  categories: [food access]
+  gcal: "https://calendar.google.com/event?action=TEMPLATE&tmeid=MTZkZmlzaTNnMmkyc2IzdXI3MWczMGVkaWggY291cnQubC5rcnVlZ2VyQG0&tmsrc=court.l.krueger%40gmail.com"

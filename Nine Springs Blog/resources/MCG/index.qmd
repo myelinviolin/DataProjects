@@ -1,0 +1,19 @@
+---
+title: "Moorland Community Gardens"
+categories: [food access]
+image: "tomatoes.png"
+description: "local community garden off Moorland Rd."
+about:
+  template: trestles
+  image-shape: round
+  image-width: 300px
+  links:
+    - icon: globe
+      href: https://moorlandgarden.wixsite.com/moorlandgardens
+---
+
+The Moorland Community Garden is part of the Dane Gardens network and serves the needs of dedicated gardeners in the Madison and Monona area. Our diverse team of seasoned veterans and novice gardeners is committed to maintaining organic practices and a responsible gardening community.
+
+```{=html}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13871.2221164757!2d-89.37200922885789!3d43.04005885620641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8806528bf8a32953%3A0xdc22a2d0e0d2a158!2s1133%20Moorland%20Rd%2C%20Madison%2C%20WI%2053713!5e0!3m2!1sen!2sus!4v1664460110581!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+```

@@ -1,10 +1,13 @@
 ```{=html}
+
+<iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23039BE5&ctz=America%2FChicago&showTabs=1&showPrint=0&showCalendars=0&showTz=0&showNav=1&showDate=1&mode=WEEK&src=NmU4NzZjN2FjYWJjMDI2OTAwYThiYTQ4NDA4OTcyOGM0NjUyZTNmY2QzNzk5Mzc2ZWRiZTcyZDU1M2FjNjg4OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F6BF26" style="border-width:0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+
 <ul>
 <% for (const item of items) { %>
   <div class="card border-primary mb-3">
     <h6 div class="card-header"><%= item.name %></h6>
       <div class="card-body">
-        <%= item.thumbnail %>
+        <img src = "events_files/mediabag/<%= item.thumbnail %>" width = "300" height = "200"/>
         <p class="card-text"><%= item.description %></p>
     <ul class="list-group list-group-flush">
       <li class="list-group-item text-primary">Location: <a href="https://maps.google.com/maps?q=<%= item.location %>" class="card-link"><%= item.location %></a></li>

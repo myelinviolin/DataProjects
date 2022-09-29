@@ -1,0 +1,19 @@
+---
+title: "Schools and Daycares"
+categories: [child care, youth]
+image: "bus.jpg"
+description: "list and locations"
+---
+
+```{=html}
+<iframe src="https://www.google.com/maps/d/embed?mid=1QcywrjfLzxMKHXy_cH8IaMohV7tHit4&ehbc=2E312F" width="640" height="480"></iframe>
+```
+|     |     |     |     |
+|-----|-----|-----|-----|
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+
+```{=html}
+<p class="text-info">sorted by distance</p>
+```
