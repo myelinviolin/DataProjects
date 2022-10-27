@@ -1,0 +1,29 @@
+---
+title: "Leaf-Free Streets"
+categories: [environment, neighborhood]
+image: "logo.jpg"
+description: to help Dane County's lakes and streams, make sure that only the rain -and nothing else- goes down
+about:
+  template: trestles
+  links:
+    - icon: globe
+      href: https://ripple-effects.com/Leaf-free-Streets
+    - icon: facebook
+      href: https://www.facebook.com/RippleEffectsWI/
+---
+
+Litter and pollution that enters our storm drains often flow to our local lakes, rivers and streams with little or no treatment. Clearing debris and litter from storm drains reduces the amount of pollution that reaches our local water resources. Help prevent localized flooding by removing debris and litter that can clog or block our storm drains and storm sewer.
+
+Leaves left in the street every fall are a major source of phosphorus to urban stormwater. When it rains water runs through street leaves forming a "leaf-tea" rich in dissolved phosphorus that drains to our lakes, rivers and streams. Safely removing street leaves before the rain can significantly reduce the amount of phosphorus in urban stormwater.
+
+Join us in keeping streets leaf-free this fall!
+
+Sign up to receive Leaf-free Streets Rain Alerts this fall- alerts will be sent (via text or email) 1-2 day before a rain event reminding you when it's time to remove street leaves.
+
+------------------------------------------------------------------------
+
+Also refer to the [Leave the Leaf](https://www.cityofmadison.com/streets/leavetheleaf/) campaign:
+
+The City of Madison wants to encourage residents to manage leaves on their own property. Our program, called Leave the Leaf, is designed to reduce phosphorus runoff from leaves, improve the quality of area soil and lawns, and reduce the need for more leaf collection trucks and staff.
+
+The 20th Century attitude towards leaves was that once they fell they created lawn litter and had to be removed. It's a new day, and time for some new thinking. It is time to view leaves as an asset that can be used to improve your lawn and reduce the use of chemical fertilizers. Leaves also make great mulch, garden cover or rich compost.
