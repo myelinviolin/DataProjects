@@ -1,9 +1,0 @@
----
-title: "Artesian Lane HOA"
-categories: [neighborhood]
-image: "image.jpg"
-about:
-  template: trestles
----
-
-Description
